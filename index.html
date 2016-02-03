@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Bootstrap 101 Template</title>
-
+    <title>首页</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.sidr.dark.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <style type="text/css">
+
+        #mobile-header {
+            display: none;
+        }
+        @media only screen and (max-width: 767px){
+            #mobile-header {
+                display: block;
+            }
+        }
+
+    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,11 +31,68 @@
     <![endif]-->
 </head>
 <body>
-<h1>你好，世界！</h1>
+
+<div class="topbar">
+    <div class="container">
+        Our free WordPress themes are downloaded over 1,200,000 times. Get them now!
+    </div>
+</div>
+<header>
+     <nav>
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="images/colorlib-logo-top.png" ><p class=text-right;">中文网</p>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" >
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">免费主题</a></li>
+                        <li><a href="#">优质主题</a></li>
+                        <li><a href="#">博客</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">首页</a></li>
+                                <li><a href="#">论坛</a></li>
+                                <li><a href="#">免费主题</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+</header>
+
+
+
+
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.sidr.min.js"></script>
+<script type="text/javascript">
+
+    $('#responsive-menu-button').sidr({
+        name: 'sidr-main',
+        source: '#navigation'
+    });
+
+</script>
 </body>
 </html>

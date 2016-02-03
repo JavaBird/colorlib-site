@@ -28,4 +28,8 @@ header a[class='navbar-brand'] img {
   max-width: 100%;
   max-height: 100%;
   float: left;
+  margin-right: 5px;
+}
+header a[class='navbar-brand'] p {
+  margin-top: 30px;
 }

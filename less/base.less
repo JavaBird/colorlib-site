@@ -29,11 +29,11 @@ header {
       position: relative;
       height: 100%;
       float: left;
-      max-width: 180px;
+      max-width: 160px;
       vertical-align:middle;
       display: table;
       a{
-        width: 180px;
+        width: 160px;
         vertical-align:middle;
         display: table-cell;
         img{
@@ -46,34 +46,65 @@ header {
 
       p{
         position: absolute;
-        left: 180px;
-        top: 25px;
+        left: 160px;
+        top: 20px;
         width: 60px;
         font-size: 16px;
         margin-bottom: 0px;
-        z-index: 1;
+        z-index: -1;
 
       }
 
     }
 
     .navbar{
-       float: right;
-      ul{
-        list-style-type: none;
-        margin-bottom: 0px;
 
-        li{
-          display: inline;
-          padding-left: 10px;
-          padding-right: 10px;
-          a{
-            display: inline-block;
-            line-height: 43px;
-            letter-spacing: 1.5px;
+      display: none;
 
-            i{
-              margin-left: 5px;
+    }
+
+    .mobile-menu{
+
+      display: none;
+
+    }
+
+
+  }
+}
+
+
+
+@media only screen and (min-width: 959px){
+
+
+  header {
+
+    .head-warp{
+
+      .navbar{
+
+        display: block;
+
+        float: right;
+
+        ul{
+          list-style-type: none;
+          margin-bottom: 0px;
+
+          li{
+            display: inline;
+            padding-left: 10px;
+            padding-right: 10px;
+            a{
+              display: inline-block;
+              line-height: 43px;
+              letter-spacing: 1.5px;
+
+              i{
+                margin-left: 5px;
+              }
+
             }
 
           }
@@ -81,11 +112,55 @@ header {
         }
 
       }
+    }
+
+  }
+  
+}
+
+@media only screen and (max-width: 958px) {
+
+  header {
+
+    .head-warp {
+
+      .mobile-menu{
+
+        display: block;
+
+        float: right;
+
+        a{
+
+          display: block;
+
+          border: 1px solid #eee;
+
+          background: #f7f7f7;
+
+          height: 40px;
+
+          line-height: 40px;
+
+          padding-left: 15px;
+
+          padding-right: 15px;
+
+        }
+
+        a:hover{
+
+          color: #666;
+
+
+        }
+
+
+      }
 
     }
 
   }
-
-
 }
+
 

@@ -24,12 +24,12 @@ header .head-warp .logo {
   position: relative;
   height: 100%;
   float: left;
-  max-width: 180px;
+  max-width: 160px;
   vertical-align: middle;
   display: table;
 }
 header .head-warp .logo a {
-  width: 180px;
+  width: 160px;
   vertical-align: middle;
   display: table-cell;
 }
@@ -41,30 +41,57 @@ header .head-warp .logo a img {
 }
 header .head-warp .logo p {
   position: absolute;
-  left: 180px;
-  top: 25px;
+  left: 160px;
+  top: 20px;
   width: 60px;
   font-size: 16px;
   margin-bottom: 0px;
-  z-index: 1;
+  z-index: -1;
 }
 header .head-warp .navbar {
-  float: right;
+  display: none;
 }
-header .head-warp .navbar ul {
-  list-style-type: none;
-  margin-bottom: 0px;
+header .head-warp .mobile-menu {
+  display: none;
 }
-header .head-warp .navbar ul li {
-  display: inline;
-  padding-left: 10px;
-  padding-right: 10px;
+@media only screen and (min-width: 959px) {
+  header .head-warp .navbar {
+    display: block;
+    float: right;
+  }
+  header .head-warp .navbar ul {
+    list-style-type: none;
+    margin-bottom: 0px;
+  }
+  header .head-warp .navbar ul li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header .head-warp .navbar ul li a {
+    display: inline-block;
+    line-height: 43px;
+    letter-spacing: 1.5px;
+  }
+  header .head-warp .navbar ul li a i {
+    margin-left: 5px;
+  }
 }
-header .head-warp .navbar ul li a {
-  display: inline-block;
-  line-height: 43px;
-  letter-spacing: 1.5px;
-}
-header .head-warp .navbar ul li a i {
-  margin-left: 5px;
+@media only screen and (max-width: 958px) {
+  header .head-warp .mobile-menu {
+    display: block;
+    float: right;
+  }
+  header .head-warp .mobile-menu a {
+    display: block;
+    border: 1px solid #eee;
+    background: #f7f7f7;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  header .head-warp .mobile-menu a:hover {
+    color: #666;
+  }
 }

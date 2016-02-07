@@ -51,7 +51,7 @@ header .head-warp .logo p {
 header .head-warp .navbar {
   display: none;
 }
-header .head-warp .mobile-menu {
+header .head-warp #left-menu {
   display: none;
 }
 @media only screen and (min-width: 959px) {
@@ -79,10 +79,9 @@ header .head-warp .mobile-menu {
 }
 @media only screen and (max-width: 958px) {
   header .head-warp .mobile-menu {
-    display: block;
     float: right;
   }
-  header .head-warp .mobile-menu a {
+  header .head-warp .mobile-menu .mobile-menu-warp #left-menu {
     display: block;
     border: 1px solid #eee;
     background: #f7f7f7;
@@ -91,7 +90,7 @@ header .head-warp .mobile-menu {
     padding-left: 15px;
     padding-right: 15px;
   }
-  header .head-warp .mobile-menu a:hover {
+  header .head-warp .mobile-menu .mobile-menu-warp a:hover {
     color: #666;
   }
 }

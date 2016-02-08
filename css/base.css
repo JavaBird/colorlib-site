@@ -1,5 +1,6 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-family: "Microsoft Yahei", Helvetica Neue, Helvetica, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-size: 14px;
 }
 a {
   color: #333;
@@ -93,4 +94,50 @@ header .head-warp #left-menu {
   header .head-warp .mobile-menu .mobile-menu-warp a:hover {
     color: #666;
   }
+}
+.main {
+  margin-top: 15px;
+}
+.panel {
+  display: block;
+  border: 1px solid #eee;
+}
+.panel .panel-content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.panel .panel-content .panel-title h2 {
+  line-height: normal !important;
+  text-align: center;
+  font-size: inherit !important;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.panel .panel-content .panel-title h2 a {
+  font-family: "Microsoft Yahei";
+  font-style: normal;
+  font-variant: normal;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  color: #222;
+}
+.panel .panel-content .panel-title h2 a:hover {
+  color: #3b86b0;
+}
+.panel .panel-content ul {
+  list-style-type: none;
+}
+.panel .panel-content ul li {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.panel:hover {
+  border-color: #3b86b0;
+}
+/*img-responsive*/
+img {
+  max-width: 100% ;
 }

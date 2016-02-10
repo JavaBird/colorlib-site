@@ -179,6 +179,8 @@ header {
 
   border: 1px solid #eee;
 
+  margin-bottom: 10px;
+
   .panel-content{
 
     padding-left: 5%;
@@ -191,7 +193,7 @@ header {
 
         line-height:normal !important;
 
-        text-align: center;
+        text-align: left;
 
         font-size: inherit !important;
 
@@ -226,13 +228,32 @@ header {
 
       list-style-type: none;
 
+      margin-bottom: 0px;
+
       li{
         display: inline-block;
         font-size: 12px;
-        margin-left: 8px;
+
         margin-right: 8px;
+        color: #777;
       }
     }
+
+    .panel-desc{
+
+      p{
+        color: #777;
+        margin-bottom: 8px;
+      }
+
+      span{
+        display: inline-block;
+        width: 100px;
+        margin-bottom: 8px;
+      }
+
+    }
+
 
   }
 
@@ -242,6 +263,26 @@ header {
 }
 .panel:hover{
   border-color: #3b86b0;
+}
+
+.follow {
+
+   p{
+     margin-bottom: 5px;
+     font-weight: 600;
+     font-size: 16px;
+   }
+  ul{
+    list-style-type: none;
+
+    li{
+      display: inline-block;
+    }
+
+
+  }
+
+
 }
 
 /*img-responsive*/

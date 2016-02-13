@@ -174,7 +174,31 @@ header .head-warp #left-menu {
   list-style-type: none;
   padding-left: 0px;
 }
+.editor_recommend ul li {
+  margin-bottom: 15px;
+}
 .editor_recommend ul li a {
   display: block;
   text-align: center;
+}
+.editor_recommend ul li a img {
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .footer {
+  display: block;
+  height: 200px;
+  background-color: #262626;
+  color: #777;
+}
+footer .copyright {
+  background-color: #222;
+  color: #999;
+}
+footer .copyright .container P {
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 0.93em;
 }

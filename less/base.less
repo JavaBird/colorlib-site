@@ -20,7 +20,11 @@ a{
 }
 
 header {
-
+  width: 100%;
+  display: block;
+  top: 0px;
+  background-color: #fff;
+  z-index: 999;
   border-bottom: 1px solid #eee;
 
   .head-warp{
@@ -53,7 +57,7 @@ header {
         width: 60px;
         font-size: 16px;
         margin-bottom: 0px;
-        z-index: -1;
+
 
       }
 
@@ -76,31 +80,46 @@ header {
 }
 
 
+.isStuck{
 
-@media only screen and (min-width: 959px){
+  -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
+  opacity: 0.9;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+
+}
+
+.isStuck .head-warp{
+
+  padding-top: 15px;
+
+  padding-bottom: 15px;
 
 
-  .isStuck{
 
-    -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
-    opacity: 0.9;
+}
 
+@media only screen and (min-width:270px ) and (max-width: 295px) {
+
+
+  .head-warp {
+      .logo{
+      max-width: 130px !important;
+    }
+    p{
+      left: 135px !important;
+      font-size: 14px !important;
+    }
   }
 
-  .isStuck .head-warp{
 
-    padding-top: 15px;
+}
 
-    padding-bottom: 15px;
+@media only screen and (min-width: 991px){
 
-  }
 
   header {
-    width: 100%;
-    display: block;
-    top: 0px;
-    background-color: #fff;
-    z-index: 999;
+
 
     .head-warp{
 
@@ -149,7 +168,7 @@ header {
   
 }
 
-@media only screen and (max-width: 958px) {
+@media only screen and (max-width: 989px) {
 
   header {
 

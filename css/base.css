@@ -25,6 +25,10 @@ header .head-warp {
   position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
+  transition: padding-top 1s;
+  transition: padding-bottom 1s;
+  -webkit-transition: padding-top 1s;
+  -webkit-transition: padding-bottom 1s;
   overflow: hidden;
 }
 header .head-warp .logo {
@@ -102,12 +106,17 @@ header .head-warp #left-menu {
     letter-spacing: 1.5px;
     text-decoration: none;
     font-size: 16px;
+    transition: font-size ease-in-out 1s;
+    -webkit-transition: font-size ease-in-out 1s;
   }
   header .head-warp .navbar ul li a i {
     margin-left: 5px;
   }
   header .head-warp .navbar ul li a:hover {
+    font-size: 18px;
     color: #4A89DC ;
+    transition: font-size ease-in-out 1s;
+    -webkit-transition: font-size ease-in-out 1s;
   }
 }
 @media only screen and (max-width: 989px) {
@@ -257,35 +266,31 @@ header .head-warp #left-menu {
   border-top: 1px solid #eee;
 }
 .download_theme ul li {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #eee;
   display: inline-block;
   width: 100%;
 }
-.download_theme ul li a {
-  display: inline-block;
-}
 .download_theme ul li a:first-child {
   overflow: hidden;
+}
+.download_theme ul li a:first-child img {
   float: left;
 }
 .download_theme ul li a:first-child img:hover {
-  -ms-transform: rotate(360deg);
-      transform: rotate(360deg);
+  transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   transition: transform 1s;
-  -webkit-transition: -webkit-transform 1s;
-}
-.download_theme ul li a:last-child {
-  float: left;
+  -webkit-transition: transform 1s;
 }
 .download_theme ul li a:last-child p {
-  display: inline-block;
   margin: 0;
   font-size: 12px;
-  width: 175px;
-  padding-left: 10px;
+  padding-left: 15px;
+  max-height: 68px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 footer .footer {
   display: block;
@@ -347,6 +352,8 @@ footer .copyright .container P {
   text-decoration: none;
   color: #fff;
   background-color: #37BC9B;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
 }
 .tag ul li a:hover {
   background-color: #DA4453;

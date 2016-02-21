@@ -292,6 +292,9 @@ header .head-warp #left-menu {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+footer {
+  margin-top: 20px;
+}
 footer .footer {
   display: block;
   height: 200px;
@@ -310,6 +313,9 @@ footer .copyright .container P {
   font-size: 0.93em;
 }
 /*context*/
+.context {
+  /*tag*/
+}
 .context h1 {
   text-align: center;
   font-size: 1.5em;
@@ -326,39 +332,177 @@ footer .copyright .container P {
 }
 .context blockquote i {
   color: #e94c3d;
+}
+.context blockquote i:first-child {
   margin-right: 10px;
+}
+.context blockquote i:last-child {
+  margin-left: 10px;
 }
 .context ul {
   list-style-type: none;
   padding-left: 0px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 .context ul li {
+  font-size: 12px;
   display: inline-block;
   color: #999;
   margin-right: 8px;
 }
-/*tag*/
-.tag ul {
+.context .tag ul {
   list-style-type: none;
   padding-left: 0px;
 }
-.tag ul li {
+.context .tag ul li {
   display: inline-block;
 }
-.tag ul li a {
-  padding: 5px;
+.context .tag ul li a {
+  padding: 8px;
   text-decoration: none;
-  color: #fff;
-  background-color: #37BC9B;
+  color: #999;
+  background-color: #f7f7f7;
   transition: background-color 1s;
   -webkit-transition: background-color 1s;
 }
-.tag ul li a:hover {
+.context .tag ul li a:hover {
   background-color: #DA4453;
+  color: #fff;
   transition: background-color 1s;
   -webkit-transition: background-color 1s;
+}
+.share ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.share ul li {
+  display: inline;
+}
+.share ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  opacity: 1;
+  transition: opacity 1s;
+  margin-right: 5px;
+}
+.share ul li a:hover {
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+.share ul li .weixin {
+  background-color: #248a34;
+}
+.share ul li .weibo {
+  background-color: #c40000;
+}
+.share ul li .zone {
+  background-color: #00ABD8;
+}
+.share ul li .tx-weibo {
+  background-color: #56abe4 ;
+}
+.share ul li .douban {
+  background-color: #30A080;
+}
+/*recent_post*/
+.recent_post {
+  border-top: solid 1px #eee;
+}
+.recent_post span {
+  display: block;
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.recent_post img {
+  max-width: 100%;
+}
+.recent_post .col-md-4 > a {
+  display: block;
+  overflow: hidden;
+}
+.recent_post .col-md-4 > a img {
+  transition: transform 1s ;
+  transition: -webkit-transform 1s;
+}
+.recent_post .col-md-4 > a img:hover {
+  transform: scale(1.5, 1.5);
+  -ms-transform: scale(1.5, 1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5, 1.5);
+  /* Safari 和 Chrome */
+  -o-transform: scale(1.5, 1.5);
+  /* Opera */
+  -moz-transform: scale(1.5, 1.5);
+  /* Firefox */
+  transition: transform 1s ;
+  transition: -webkit-transform 1s;
+}
+.recent_post .col-md-4 .rece {
+  padding: 14px 8px 8px 8px;
+  border: 1px solid #eee;
+}
+.recent_post .col-md-4 .rece a {
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 1s;
+  -webkit-transition: color 1s;
+}
+.recent_post .col-md-4 .rece a:hover {
+  color: #d81517;
+  transition: color ;
+  -webkit-transition: color ;
+}
+.recent_post .col-md-4 .rece p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #999;
+}
+/*article_iconfont*/
+@font-face {
+  font-family: "iconfont";
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/iconfont.woff') format('woff'), /* chrome, firefox */ url('../fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../fonts/iconfont.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-zone:before {
+  content: "\e600";
+}
+.icon-weibo:before {
+  content: "\e601";
+}
+.icon-weibo1:before {
+  content: "\e602";
+}
+.icon-weixin:before {
+  content: "\e603";
+}
+.icon-renren:before {
+  content: "\e604";
+}
+.icon-friends:before {
+  content: "\e605";
+}
+.icon-douban01:before {
+  content: "\e606";
 }
 /*breadcrumb*/
 .breadcrumb-col {

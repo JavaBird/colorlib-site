@@ -477,6 +477,7 @@ header {
 
 footer{
 
+  margin-top: 20px;
 
   .footer{
 
@@ -529,17 +530,26 @@ footer{
     background-color: #f3f5f9;
 
     i{
-      color: #e94c3d;
+      color:#e94c3d;
+    }
+    i:first-child{
       margin-right: 10px;
     }
+    i:last-child{
+      margin-left: 10px;
+    }
+
   }
 
   ul{
       list-style-type: none;
       padding-left: 0px;
-    text-align: center;
-    margin-bottom: 50px;
+      text-align: center;
+      margin-bottom: 25px;
+
     li{
+
+        font-size: 12px;
         display: inline-block;
         color: #999;
         margin-right: 8px;
@@ -547,29 +557,30 @@ footer{
 
   }
 
-}
 
-/*tag*/
-.tag{
+  /*tag*/
+  .tag{
 
-  ul{
-    list-style-type: none;
-    padding-left: 0px;
+    ul{
+      list-style-type: none;
+      padding-left: 0px;
+      li{
+        display: inline-block;
+        a{
+          padding: 8px;
+          text-decoration: none;
+          color: #999;
+          background-color: #f7f7f7;
+          transition: background-color 1s;
+          -webkit-transition: background-color 1s;
+        }
+        a:hover{
+          background-color: #DA4453;
+          color: #fff;
+          transition: background-color 1s;
+          -webkit-transition: background-color 1s;
+        }
 
-    li{
-      display: inline-block;
-      a{
-        padding: 5px;
-        text-decoration: none;
-        color: #fff;
-        background-color: #37BC9B;
-        transition: background-color 1s;
-        -webkit-transition: background-color 1s;
-      }
-      a:hover{
-        background-color: #DA4453;
-        transition: background-color 1s;
-        -webkit-transition: background-color 1s;
       }
 
     }
@@ -577,6 +588,149 @@ footer{
   }
 
 }
+
+
+
+.share{
+
+  ul{
+    list-style-type: none;
+    padding: 0px;
+    li{
+      display: inline;
+      a{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        opacity: 1;
+        transition: opacity 1s;
+        margin-right: 5px;
+      }
+      a:hover{
+        opacity: 0.5;
+        transition: opacity 1s;
+      }
+      .weixin{
+        background-color: #248a34;
+      }
+      .weibo{
+        background-color: #c40000;
+      }
+      .zone{
+        background-color: #00ABD8;
+      }
+      .tx-weibo{
+        background-color:#56abe4 ;
+      }
+      .douban{
+        background-color: #30A080;
+      }
+
+    }
+  }
+
+}
+
+/*recent_post*/
+.recent_post{
+
+  border-top: solid 1px #eee;
+
+  span{
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+
+  .col-md-4{
+
+      >a{
+        display: block;
+        overflow: hidden;
+        img{
+
+          transition:transform 1s ;
+          transition: -webkit-transform 1s;
+        }
+        img:hover{
+          transform: scale(1.5,1.5);
+          -ms-transform: scale(1.5,1.5);	/* IE 9 */
+          -webkit-transform: scale(1.5,1.5);	/* Safari 和 Chrome */
+          -o-transform: scale(1.5,1.5);	/* Opera */
+          -moz-transform: scale(1.5,1.5);	/* Firefox */
+          transition:transform 1s ;
+          transition: -webkit-transform 1s;
+        }
+      }
+
+    .rece{
+      padding: 14px 8px 8px 8px;
+      border: 1px solid #eee;
+      a{
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 1s;
+        -webkit-transition: color 1s;
+      }
+      a:hover{
+        color: #d81517;
+        transition: color ;
+        -webkit-transition: color ;
+      }
+      p{
+        font-size: 12px;
+        line-height: 20px;
+        color: #999;
+      }
+    }
+
+  }
+
+
+
+}
+
+
+/*article_iconfont*/
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot'); /* IE9*/
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:20px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-zone:before { content: "\e600"; }
+.icon-weibo:before { content: "\e601"; }
+.icon-weibo1:before { content: "\e602"; }
+.icon-weixin:before { content: "\e603"; }
+.icon-renren:before { content: "\e604"; }
+.icon-friends:before { content: "\e605"; }
+.icon-douban01:before { content: "\e606"; }
+
+
+
+
 
 /*breadcrumb*/
 .breadcrumb-col{

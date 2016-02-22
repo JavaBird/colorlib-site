@@ -1,6 +1,8 @@
 
 $(document).ready(function () {
-    $('#left-menu').sidr({
+    $('#left-menu').click(function(){
+        $("#sidr").css("display","block");
+    }).sidr({
         timing: 'ease-in-out',
         speed: 500
     });

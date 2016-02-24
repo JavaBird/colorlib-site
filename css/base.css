@@ -176,7 +176,7 @@ header .head-warp #left-menu {
 .panel .panel-content ul li {
   display: inline-block;
   font-size: 12px;
-  margin-right: 8px;
+  margin-right: 5px;
   color: #777;
 }
 .panel .panel-content .panel-desc {
@@ -188,6 +188,9 @@ header .head-warp #left-menu {
   font-family: 'Tahoma', 'simsun' !important;
   font-size: 12px;
   line-height: 22px;
+  max-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .panel .panel-content .panel-desc span {
   width: 100px;

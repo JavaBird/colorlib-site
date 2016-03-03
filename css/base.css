@@ -475,33 +475,57 @@ footer .copyright .container P {
 }
 /*comment*/
 .comments-area h2 {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   margin-bottom: 0px;
+  border-bottom: 1px solid #eee;
 }
 .comments-area ol {
   list-style-type: none;
   padding-left: 0px;
 }
+.comments-area .commentlist {
+  margin-top: 0px;
+}
 .comments-area .commentlist .comment {
-  border: 1px solid #eee;
-  padding: 15px;
+  border-bottom: 1px solid #eee;
   margin-bottom: 8px;
 }
 .comments-area .commentlist .comment .comment-body {
   position: relative;
-  padding: 25px 25px 25px 100px;
+  padding: 25px 25px 10px 80px;
+  border-bottom: 1px solid #eee;
+}
+.comments-area .commentlist .comment .comment-body .comment-author {
+  margin-bottom: 5px;
 }
 .comments-area .commentlist .comment .comment-body .comment-author img {
   position: absolute;
-  left: 20px;
+  left: 10px;
   border-radius: 4px;
 }
 .comments-area .commentlist .comment .comment-body .comment-author .fn {
   color: #000;
   font-style: normal;
 }
-.comments-area .commentlist .comment .children {
-  border-left: 1px solid #eee;
+.comments-area .commentlist .comment .comment-body .comment-meta a {
+  color: #999;
+  font-size: 12px;
+  text-decoration: none;
+}
+.comments-area .commentlist .comment .comment-body .reply {
+  position: absolute;
+  display: block;
+  top: 25px;
+  right: 15px;
+}
+.comments-area .commentlist .comment .children li {
+  border-right: none;
+  border-bottom: none !important;
+  border-top: none;
+  margin-bottom: 0px;
+}
+.comments-area .commentlist .comment .children li .comment-body {
+  border-bottom: none;
 }
 .comments-area .commentlist ul {
   list-style-type: none;

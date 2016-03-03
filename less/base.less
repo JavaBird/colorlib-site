@@ -711,8 +711,9 @@ footer{
 /*comment*/
 .comments-area{
     h2{
-      padding-bottom: 15px;
+      padding-bottom: 10px;
       margin-bottom: 0px;
+      border-bottom:1px solid #eee;
     }
     ol{
       list-style-type: none;
@@ -720,21 +721,25 @@ footer{
     }
     .commentlist{
 
+      margin-top: 0px;
+
         .comment{
 
-          border:1px solid #eee;
-          padding: 15px;
+          border-bottom:1px solid #eee;
           margin-bottom: 8px;
 
           .comment-body{
-             position: relative;
-            padding:25px 25px 25px 100px;
+            position: relative;
+            padding:25px 25px 10px 80px;
+            border-bottom:1px solid #eee;
 
             .comment-author{
+              margin-bottom: 5px;
+
 
               img{
                 position: absolute;
-                left: 20px;
+                left: 10px;
                 border-radius: 4px;
               }
               .fn{
@@ -743,11 +748,43 @@ footer{
 
               }
             }
+
+            .comment-meta{
+
+              a{
+                color: #999;
+                font-size: 12px;
+                text-decoration: none;
+              }
+
+
+            }
+
+            .reply{
+              position: absolute;
+              display: block;
+              top:25px;
+              right: 15px;
+
+            }
+
           }
 
           .children{
 
-            border-left: 1px solid #eee;
+            li{
+
+              border-right: none;
+              border-bottom: none !important;
+              border-top: none;
+              margin-bottom: 0px;
+
+              .comment-body{
+
+                border-bottom: none;
+
+              }
+            }
 
           }
 

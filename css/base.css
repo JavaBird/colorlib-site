@@ -473,6 +473,39 @@ footer .copyright .container P {
   line-height: 20px;
   color: #999;
 }
+/*comment*/
+.comments-area h2 {
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+}
+.comments-area ol {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.comments-area .commentlist .comment {
+  border: 1px solid #eee;
+  padding: 15px;
+  margin-bottom: 8px;
+}
+.comments-area .commentlist .comment .comment-body {
+  position: relative;
+  padding: 25px 25px 25px 100px;
+}
+.comments-area .commentlist .comment .comment-body .comment-author img {
+  position: absolute;
+  left: 20px;
+  border-radius: 4px;
+}
+.comments-area .commentlist .comment .comment-body .comment-author .fn {
+  color: #000;
+  font-style: normal;
+}
+.comments-area .commentlist .comment .children {
+  border-left: 1px solid #eee;
+}
+.comments-area .commentlist ul {
+  list-style-type: none;
+}
 /*article_iconfont*/
 @font-face {
   font-family: "iconfont";

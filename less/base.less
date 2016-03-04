@@ -731,20 +731,23 @@ footer{
           .comment-body{
             position: relative;
             padding:25px 25px 10px 80px;
-            border-bottom:1px solid #eee;
-
             .comment-author{
               margin-bottom: 5px;
 
 
               img{
                 position: absolute;
-                left: 10px;
-                border-radius: 4px;
+                left: 0px;
+                border-radius: 50%;
               }
               .fn{
                 color: #000;
                 font-style: normal;
+                margin-right: 5px;
+              }
+              .says{
+
+                color: #999;
 
               }
             }
@@ -772,11 +775,13 @@ footer{
 
           .children{
 
+            padding-left: 60px;
+
             li{
 
               border-right: none;
               border-bottom: none !important;
-              border-top: none;
+              border-top: 1px solid #eee;
               margin-bottom: 0px;
 
               .comment-body{

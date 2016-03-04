@@ -493,19 +493,22 @@ footer .copyright .container P {
 .comments-area .commentlist .comment .comment-body {
   position: relative;
   padding: 25px 25px 10px 80px;
-  border-bottom: 1px solid #eee;
 }
 .comments-area .commentlist .comment .comment-body .comment-author {
   margin-bottom: 5px;
 }
 .comments-area .commentlist .comment .comment-body .comment-author img {
   position: absolute;
-  left: 10px;
-  border-radius: 4px;
+  left: 0px;
+  border-radius: 50%;
 }
 .comments-area .commentlist .comment .comment-body .comment-author .fn {
   color: #000;
   font-style: normal;
+  margin-right: 5px;
+}
+.comments-area .commentlist .comment .comment-body .comment-author .says {
+  color: #999;
 }
 .comments-area .commentlist .comment .comment-body .comment-meta a {
   color: #999;
@@ -518,10 +521,13 @@ footer .copyright .container P {
   top: 25px;
   right: 15px;
 }
+.comments-area .commentlist .comment .children {
+  padding-left: 60px;
+}
 .comments-area .commentlist .comment .children li {
   border-right: none;
   border-bottom: none !important;
-  border-top: none;
+  border-top: 1px solid #eee;
   margin-bottom: 0px;
 }
 .comments-area .commentlist .comment .children li .comment-body {
